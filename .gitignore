@@ -1,0 +1,24 @@
+# Employee PII — never commit. This tool's whole output is HR data.
+snapshots/
+reports/
+exports/
+*.log
+
+# Generated at install time; contains local absolute paths
+run_daily.sh
+
+# Secrets live outside the repo entirely
+.secrets.env
+*.env
+!.env.example
+
+# Local-only test expectations that reference real people
+fixtures/
+
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Local working notes, not part of the published tool
+ISA.md
+DESIGN.md
